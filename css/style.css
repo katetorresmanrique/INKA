@@ -1713,7 +1713,7 @@ body {
     max-width: 1050px;
     height: auto;
     padding: 60px 20px;
-    margin: 0 auto; /* 👈 centra todo el bloque */
+    margin: 0 auto;
 }
 
 /* titulo */
@@ -1739,14 +1739,14 @@ body {
 /* wrapper centrado */
 .swiper-wrapper {
     display: flex;
-    justify-content: center; /* 👈 centra las cards si son pocas */
+    justify-content: center;
 }
 
 /* slide */
 .swiper-slide {
     display: flex;
     justify-content: center;
-    align-items: center; /* 👈 centrado vertical */
+    align-items: center;
 }
 
 /* card */
@@ -1763,7 +1763,7 @@ body {
     transition: transform .3s ease;
 }
 
-/* efecto hover opcional 🔥 */
+/* efecto hover */
 .card-item:hover {
     transform: translateY(-8px);
 }
@@ -1822,6 +1822,74 @@ body {
 /* paginacion */
 .swiper-pagination-bullet {
     background: var(--primary-color);
+}
+
+
+/* ========================= */
+/* 📱 RESPONSIVE (MÓVIL) */
+/* ========================= */
+@media (max-width: 768px) {
+
+    .testimonials {
+        margin-top: 6em;
+    }
+
+    .swiper {
+        padding: 40px 10px;
+    }
+
+    .card-list {
+        margin-top: 100px;
+    }
+
+    .card-item {
+        max-width: 260px;
+        padding: 60px 15px 25px;
+    }
+
+    .user-image {
+        width: 90px;
+        height: 90px;
+        margin-top: -45px;
+    }
+
+    .section-title h3 {
+        font-size: 1.5rem;
+    }
+
+    .section-title p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ========================= */
+/* 📱 EXTRA PEQUEÑO (CELULARES) */
+/* ========================= */
+@media (max-width: 480px) {
+
+    .card-list {
+        margin-top: 80px;
+    }
+
+    .card-item {
+        max-width: 220px;
+        padding: 50px 12px 20px;
+    }
+
+    .user-image {
+        width: 75px;
+        height: 75px;
+        margin-top: -40px;
+    }
+
+    .user-name {
+        font-size: 1rem;
+    }
+
+    .user-profession {
+        font-size: 0.8rem;
+    }
 }
 
 /* =========================================
